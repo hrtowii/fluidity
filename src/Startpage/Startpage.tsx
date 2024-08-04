@@ -25,13 +25,13 @@ const StyledStartpage = styled.div`
 `
 
 const Image = styled.img`
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   border: 2px solid var(--default-color);
-  padding: 10px;
+  border-radius: 100vmax;
+  padding: 100px;
   object-fit: cover;
-
-  animation: circling-shadow 4s ease 0s infinite normal;
+  animation: circling-shadow 10000000s ease 0s infinite normal;
 `
 
 export const Startpage = () => {

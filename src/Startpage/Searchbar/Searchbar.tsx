@@ -55,7 +55,7 @@ const SearchIcon = styled.div<{ src: string }>`
 
 export const Searchbar = () => {
   const searchSettings = Settings.Search.getWithFallback()
-  const engine: string = searchSettings.engine || "duckduckgo.com/"
+  const engine: string = searchSettings.engine || "google.com/"
 
   let searchSymbol = undefined
   if (engine.includes("duckduckgo")) searchSymbol = duckduckgo
@@ -78,7 +78,7 @@ export const Searchbar = () => {
     <StyledSearchbarContainer>
       {searchSymbol && <SearchIcon src={searchSymbol} />}
       <StyledSearchbar
-        placeholder="Always stay clean!"
+        placeholder="You only have one shot."
         type="input"
         onKeyUp={e => e.which === 13 && redirectToSearch(e.currentTarget.value)}
         // eslint-disable-next-line jsx-a11y/no-autofocus

@@ -36,7 +36,7 @@ const AccordionContent = styled.div<{ width: number }>`
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.25s;
 `
 
 const AccordionTitleWrapper = styled.button<{ active: boolean }>`
@@ -58,7 +58,7 @@ const AccordionTitleWrapper = styled.button<{ active: boolean }>`
     width: 100%;
     height: ${({ active }) => (active ? "390px" : "0")};
     background-color: var(--accent-color);
-    transition: ${({ active }) => (active ? "1s" : ".5s")};
+    transition: ${({ active }) => (active ? "0.75s" : ".5s")};
   }
   :hover,
   :focus {
@@ -87,7 +87,7 @@ const AccordionTitleWrapper = styled.button<{ active: boolean }>`
     position: absolute;
     top: ${({ active }) => (active ? "0px" : "350px")};
     overflow: hidden;
-    transition: ${({ active }) => (active ? "1s" : ".5s")};
+    transition: ${({ active }) => (active ? "0.75s" : ".5s")};
     ::before {
       content: "";
       width: 180px;
