@@ -6,6 +6,7 @@ import pic_5 from "./pictures/pic_5.jpg"
 import pic_6 from "./pictures/pic_6.jpg"
 import pic_7 from "./pictures/pic_7.jpg"
 import pic_8 from "./pictures/pic_8.png"
+import rahhh from "./pictures/rahhh.png"
 import { queryToken } from "../Startpage/Searchbar/Searchbar"
 
 export interface dataElem {
@@ -230,6 +231,16 @@ export interface Theme {
 }
 
 export const themes: Theme[] = [
+  {
+    name: "still in my heart",
+    image: rahhh,
+    colors: {
+      "--bg-color": "#1f2335",
+      "--accent-color": "#f7768e",
+      "--accent-color2": "#bb9af7",
+      "--default-color": "#c0caf5",
+    },
+  },
   {
     name: "You only have one shot.",
     image: "https://hrtowii.github.io/img/oneshotsun.png",
