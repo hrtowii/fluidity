@@ -1,22 +1,22 @@
-import pic_1 from "./pictures/pic_1.jpg"
-import pic_2 from "./pictures/pic_2.jpg"
-import pic_3 from "./pictures/pic_3.jpg"
-import pic_4 from "./pictures/pic_4.jpg"
-import pic_5 from "./pictures/pic_5.jpg"
-import pic_6 from "./pictures/pic_6.jpg"
-import pic_7 from "./pictures/pic_7.jpg"
-import pic_8 from "./pictures/pic_8.png"
-import rahhh from "./pictures/rahhh.png"
-import { queryToken } from "../Startpage/Searchbar/Searchbar"
+import pic_1 from "./pictures/pic_1.jpg";
+import pic_2 from "./pictures/pic_2.jpg";
+import pic_3 from "./pictures/pic_3.jpg";
+import pic_4 from "./pictures/pic_4.jpg";
+import pic_5 from "./pictures/pic_5.jpg";
+import pic_6 from "./pictures/pic_6.jpg";
+import pic_7 from "./pictures/pic_7.jpg";
+import pic_8 from "./pictures/pic_8.png";
+import rahhh from "./pictures/rahhh.png";
+import { queryToken } from "../Startpage/Searchbar/Searchbar";
 
 export interface dataElem {
-  label: string
-  value: string
+  label: string;
+  value: string;
 }
 
 export interface linkGroup {
-  title: string
-  links: dataElem[]
+  title: string;
+  links: dataElem[];
 }
 
 /* eslint-disable prettier/prettier */
@@ -72,8 +72,9 @@ export const links: linkGroup[] = [
       },
       {
         label: "NN from scratch",
-        value: "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
-      }
+        value:
+          "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+      },
     ],
   },
   // {
@@ -93,6 +94,26 @@ export const links: linkGroup[] = [
     title: "AI",
     links: [
       {
+        label: "Mistral Chat",
+        value: "https://chat.mistral.ai/chat",
+      },
+      {
+        label: "HuggingChat",
+        value: "https://huggingface.co/chat",
+      },
+      {
+        label: "Perplexity",
+        value: "https://perplexity.ai/",
+      },
+      {
+        label: "OpenRouter",
+        value: "https://openrouter.ai",
+      },
+      {
+        label: "Deepseek",
+        value: "https://chat.deepseek.com/",
+      },
+      {
         label: "Claude",
         value: "https://claude.ai/",
       },
@@ -108,30 +129,35 @@ export const links: linkGroup[] = [
         label: "Groq",
         value: "https://groq.com/",
       },
-    ]
+    ],
   },
   {
     title: "Music",
     links: [
       {
         label: "JP music I like",
-        value: "https://open.spotify.com/playlist/3P1g8sdjEjhtJpvstQlMFe?si=9b15a943a7104cda",
+        value:
+          "https://open.spotify.com/playlist/3P1g8sdjEjhtJpvstQlMFe?si=9b15a943a7104cda",
       },
       {
         label: "JP music I like more",
-        value: "https://open.spotify.com/playlist/7LSUi2q2oAz3CuV0rbdpcv?si=c6cd3362e6df4617",
+        value:
+          "https://open.spotify.com/playlist/7LSUi2q2oAz3CuV0rbdpcv?si=c6cd3362e6df4617",
       },
       {
         label: "Stud(ie)y",
-        value: "https://open.spotify.com/playlist/1BHX7lRkOuRE01v7SOpEM5?si=70657d23a42749a3",
+        value:
+          "https://open.spotify.com/playlist/1BHX7lRkOuRE01v7SOpEM5?si=70657d23a42749a3",
       },
       {
         label: "August 23-24",
-        value: "https://open.spotify.com/playlist/6CiX9HQUqizhUdB4vVoiqM?si=b3a87aea98044e93",
+        value:
+          "https://open.spotify.com/playlist/6CiX9HQUqizhUdB4vVoiqM?si=b3a87aea98044e93",
       },
       {
         label: "Youtube music playlist",
-        value: "https://www.youtube.com/playlist?list=PL8mvIdSAWr2qV7xOZtKNy-Q5EvtnOKebe",
+        value:
+          "https://www.youtube.com/playlist?list=PL8mvIdSAWr2qV7xOZtKNy-Q5EvtnOKebe",
       },
     ],
   },
@@ -165,7 +191,7 @@ export const links: linkGroup[] = [
   //     },
   //   ],
   // },
-]
+];
 
 export const images: dataElem[] = [
   { label: "pic_1", value: pic_1 },
@@ -176,7 +202,7 @@ export const images: dataElem[] = [
   { label: "pic_6", value: pic_6 },
   { label: "pic_7", value: pic_7 },
   { label: "pic_8", value: pic_8 },
-]
+];
 
 export const searchEngines: dataElem[] = [
   {
@@ -195,13 +221,13 @@ export const searchEngines: dataElem[] = [
     label: "Ecosia",
     value: `https://ecosia.org/search/?q=${queryToken}`,
   },
-]
+];
 
-export type FastForwards = Record<string, string>
+export type FastForwards = Record<string, string>;
 
 export interface Search {
-  engine: string
-  fastForward: FastForwards
+  engine: string;
+  fastForward: FastForwards;
 }
 
 export const searchSettings: Search = {
@@ -214,20 +240,20 @@ export const searchSettings: Search = {
     gitlab: "https://gitlab.com/",
     youtube: "https://youtube.com/",
   },
-}
+};
 
 export interface colorsType {
-  [key: string]: string
-  "--bg-color": string
-  "--default-color": string
-  "--accent-color": string
-  "--accent-color2": string
+  [key: string]: string;
+  "--bg-color": string;
+  "--default-color": string;
+  "--accent-color": string;
+  "--accent-color2": string;
 }
 
 export interface Theme {
-  name: string
-  colors: colorsType
-  image: string
+  name: string;
+  colors: colorsType;
+  image: string;
 }
 
 export const themes: Theme[] = [
@@ -262,4 +288,4 @@ export const themes: Theme[] = [
       "--accent-color2": "#8AADF4",
     },
   },
-]
+];
