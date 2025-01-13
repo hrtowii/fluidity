@@ -1,13 +1,14 @@
-import pic_1 from "./pictures/pic_1.jpg";
-import pic_2 from "./pictures/pic_2.jpg";
-import pic_3 from "./pictures/pic_3.jpg";
-import pic_4 from "./pictures/pic_4.jpg";
-import pic_5 from "./pictures/pic_5.jpg";
-import pic_6 from "./pictures/pic_6.jpg";
-import pic_7 from "./pictures/pic_7.jpg";
-import pic_8 from "./pictures/pic_8.png";
-import rahhh from "./pictures/rahhh.png";
-import { queryToken } from "../Startpage/Searchbar/Searchbar";
+import pic_1 from "./pictures/pic_1.jpg"
+import pic_2 from "./pictures/pic_2.jpg"
+import pic_3 from "./pictures/pic_3.jpg"
+import pic_4 from "./pictures/pic_4.jpg"
+import pic_5 from "./pictures/pic_5.jpg"
+import pic_6 from "./pictures/pic_6.jpg"
+import pic_7 from "./pictures/pic_7.jpg"
+import pic_8 from "./pictures/pic_8.png"
+import rahhh from "./pictures/rahhh.png"
+import { queryToken } from "../Startpage/Searchbar/Searchbar"
+/* eslint-disable prettier/prettier */
 
 export interface dataElem {
   label: string;
