@@ -62,6 +62,7 @@ export const Searchbar = () => {
   else if (engine.includes("google")) searchSymbol = google
   else if (engine.includes("qwant")) searchSymbol = qwant
   else if (engine.includes("ecosia")) searchSymbol = ecosia
+  else if (engine.includes("exa")) searchSymbol = qwant
 
   const redirectToSearch = (query: string) => {
     if (searchSettings.fastForward[query])

@@ -232,7 +232,7 @@ export const searchEngines: dataElem[] = [
   },
   {
     label: "Exa",
-    value: `https://exa.ai/?q=${queryToken}`,
+    value: `https://exa.ai/search/?q=${queryToken}`,
   }
 ];
 
