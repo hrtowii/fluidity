@@ -119,7 +119,7 @@ export const links: linkGroup[] = [
         value: "https://claude.ai/",
       },
       {
-        label: "Chatgipity",
+        label: "ChatGPT",
         value: "https://chat.openai.com/",
       },
       {
@@ -130,6 +130,14 @@ export const links: linkGroup[] = [
         label: "Groq",
         value: "https://groq.com/",
       },
+      {
+        label: "Qwen Chat",
+        value: "https://chat.qwen.ai/"
+      },
+      {
+        label: "Exa Search",
+        value: "https://exa.ai/"
+      }
     ],
   },
   {
@@ -222,6 +230,10 @@ export const searchEngines: dataElem[] = [
     label: "Ecosia",
     value: `https://ecosia.org/search/?q=${queryToken}`,
   },
+  {
+    label: "Exa",
+    value: `https://exa.ai/?q=${queryToken}`,
+  }
 ];
 
 export type FastForwards = Record<string, string>;
