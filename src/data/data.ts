@@ -1,13 +1,13 @@
-import pic_1 from "./pictures/pic_1.jpg"
-import pic_2 from "./pictures/pic_2.jpg"
-import pic_3 from "./pictures/pic_3.jpg"
-import pic_4 from "./pictures/pic_4.jpg"
-import pic_5 from "./pictures/pic_5.jpg"
-import pic_6 from "./pictures/pic_6.jpg"
-import pic_7 from "./pictures/pic_7.jpg"
-import pic_8 from "./pictures/pic_8.png"
-import rahhh from "./pictures/rahhh.png"
-import { queryToken } from "../Startpage/Searchbar/Searchbar"
+import pic_1 from "./pictures/pic_1.jpg";
+import pic_2 from "./pictures/pic_2.jpg";
+import pic_3 from "./pictures/pic_3.jpg";
+import pic_4 from "./pictures/pic_4.jpg";
+import pic_5 from "./pictures/pic_5.jpg";
+import pic_6 from "./pictures/pic_6.jpg";
+import pic_7 from "./pictures/pic_7.jpg";
+import pic_8 from "./pictures/pic_8.png";
+import rahhh from "./pictures/rahhh.png";
+import { queryToken } from "../Startpage/Searchbar/Searchbar";
 /* eslint-disable prettier/prettier */
 
 export interface dataElem {
@@ -132,12 +132,12 @@ export const links: linkGroup[] = [
       },
       {
         label: "Qwen Chat",
-        value: "https://chat.qwen.ai/"
+        value: "https://chat.qwen.ai/",
       },
       {
         label: "Exa Search",
-        value: "https://exa.ai/"
-      }
+        value: "https://exa.ai/",
+      },
     ],
   },
   {
@@ -233,7 +233,7 @@ export const searchEngines: dataElem[] = [
   {
     label: "Exa",
     value: `https://exa.ai/search/?q=${queryToken}`,
-  }
+  },
 ];
 
 export type FastForwards = Record<string, string>;
@@ -270,6 +270,16 @@ export interface Theme {
 }
 
 export const themes: Theme[] = [
+  {
+    name: "rose-pine",
+    image: "https://hrtowii.github.io/img/oneshotsun.png",
+    colors: {
+      "--bg-color": "#191724",
+      "--accent-color": "#ebbcba",
+      "--accent-color2": "#c4a7e7",
+      "--default-color": "#e0def4",
+    },
+  },
   {
     name: "still in my heart",
     image: rahhh,
