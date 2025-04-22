@@ -1,14 +1,15 @@
-import pic_1 from "./pictures/pic_1.jpg"
-import pic_2 from "./pictures/pic_2.jpg"
-import pic_3 from "./pictures/pic_3.jpg"
-import pic_4 from "./pictures/pic_4.jpg"
-import pic_5 from "./pictures/pic_5.jpg"
-import pic_6 from "./pictures/pic_6.jpg"
-import pic_7 from "./pictures/pic_7.jpg"
-import pic_8 from "./pictures/pic_8.png"
-import rahhh from "./pictures/rahhh.png"
-import { queryToken } from "../Startpage/Searchbar/Searchbar"
 /* eslint-disable prettier/prettier */
+
+import pic_1 from "./pictures/pic_1.jpg";
+import pic_2 from "./pictures/pic_2.jpg";
+import pic_3 from "./pictures/pic_3.jpg";
+import pic_4 from "./pictures/pic_4.jpg";
+import pic_5 from "./pictures/pic_5.jpg";
+import pic_6 from "./pictures/pic_6.jpg";
+import pic_7 from "./pictures/pic_7.jpg";
+import pic_8 from "./pictures/pic_8.png";
+import rahhh from "./pictures/rahhh.png";
+import { queryToken } from "../Startpage/Searchbar/Searchbar";
 
 export interface dataElem {
   label: string;
@@ -23,32 +24,15 @@ export interface linkGroup {
 /* eslint-disable prettier/prettier */
 export const links: linkGroup[] = [
   {
-    title: "Reddit",
-    links: [
-      {
-        label: "r/sgexams",
-        value: "https://www.reddit.com/r/sgexams/",
-      },
-      {
-        label: "r/unixporn",
-        value: "https://www.reddit.com/r/unixporn/",
-      },
-      {
-        label: "r/singapore",
-        value: "https://www.reddit.com/r/singapore/",
-      },
-      {
-        label: "r/jailbreak",
-        value: "https://www.reddit.com/r/jailbreak/",
-      },
-    ],
-  },
-  {
     title: "School",
     links: [
       {
         label: "Politemall",
         value: "https://nyplms.polite.edu.sg/",
+      },
+      {
+        label: "Internship Portal",
+        value: "https://ipp.sit.nyp.edu.sg/ippweb",
       },
       {
         label: "Outlook",
@@ -60,6 +44,7 @@ export const links: linkGroup[] = [
       },
     ],
   },
+
   {
     title: "Coding",
     links: [
@@ -68,8 +53,16 @@ export const links: linkGroup[] = [
         value: "https://doc.rust-lang.org/book/",
       },
       {
+        label: "Tailwind Docs",
+        value: "https://v2.tailwindcss.com/docs/container",
+      },
+      {
         label: "Rust concurrency",
         value: "https://marabos.nl/atomics/",
+      },
+      {
+        label: "fullstack 0",
+        value: "https://fullstackopen.com/en/part0/fundamentals_of_web_apps/",
       },
       {
         label: "NN from scratch",
@@ -94,13 +87,26 @@ export const links: linkGroup[] = [
   {
     title: "AI",
     links: [
+      // {
+      //   label: "Mistral Chat",
+      //   value: "https://chat.mistral.ai/chat",
+      // },
+      // {
+      //   label: "HuggingChat",
+      //   value: "https://huggingface.co/chat",
+      // },
+
       {
-        label: "Mistral Chat",
-        value: "https://chat.mistral.ai/chat",
+        label: "Copilot",
+        value: "https://github.com/copilot/",
       },
       {
-        label: "HuggingChat",
-        value: "https://huggingface.co/chat",
+        label: "Gemini",
+        value: "https://gemini.google.com/",
+      },
+      {
+        label: "Grok",
+        value: "https://grok.ai/",
       },
       {
         label: "Perplexity",
@@ -123,20 +129,33 @@ export const links: linkGroup[] = [
         value: "https://chat.openai.com/",
       },
       {
-        label: "Gemini",
-        value: "https://gemini.google.com/",
-      },
-      {
-        label: "Groq",
-        value: "https://groq.com/",
-      },
-      {
         label: "Qwen Chat",
         value: "https://chat.qwen.ai/",
       },
       {
         label: "Exa Search",
         value: "https://exa.ai/",
+      },
+    ],
+  },
+  {
+    title: "Reddit",
+    links: [
+      {
+        label: "r/sgexams",
+        value: "https://www.reddit.com/r/sgexams/",
+      },
+      {
+        label: "r/unixporn",
+        value: "https://www.reddit.com/r/unixporn/",
+      },
+      {
+        label: "r/singapore",
+        value: "https://www.reddit.com/r/singapore/",
+      },
+      {
+        label: "r/jailbreak",
+        value: "https://www.reddit.com/r/jailbreak/",
       },
     ],
   },
@@ -154,14 +173,14 @@ export const links: linkGroup[] = [
           "https://open.spotify.com/playlist/7LSUi2q2oAz3CuV0rbdpcv?si=c6cd3362e6df4617",
       },
       {
+        label: "Sept 24-25",
+        value:
+          "https://open.spotify.com/playlist/5McJQAfRGzxYicrBJ6reIO?si=0d709319fcf34f90",
+      },
+      {
         label: "Stud(ie)y",
         value:
           "https://open.spotify.com/playlist/1BHX7lRkOuRE01v7SOpEM5?si=70657d23a42749a3",
-      },
-      {
-        label: "August 23-24",
-        value:
-          "https://open.spotify.com/playlist/6CiX9HQUqizhUdB4vVoiqM?si=b3a87aea98044e93",
       },
       {
         label: "Youtube music playlist",

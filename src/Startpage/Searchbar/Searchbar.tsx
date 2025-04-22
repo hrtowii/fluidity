@@ -1,14 +1,16 @@
-import React from "react"
+/* eslint-disable */
 
-import styled from "@emotion/styled"
+import React from "react";
 
-import duckduckgo from "../../data/pictures/duckduckgo.svg"
-import ecosia from "../../data/pictures/ecosia.svg"
-import google from "../../data/pictures/google.svg"
-import qwant from "../../data/pictures/qwant.svg"
-import * as Settings from "../Settings/settingsHandler"
+import styled from "@emotion/styled";
 
-export const queryToken = "{{query}}"
+import duckduckgo from "../../data/pictures/duckduckgo.svg";
+import ecosia from "../../data/pictures/ecosia.svg";
+import google from "../../data/pictures/google.svg";
+import qwant from "../../data/pictures/qwant.svg";
+import * as Settings from "../Settings/settingsHandler";
+
+export const queryToken = "{{query}}";
 
 const StyledSearchbarContainer = styled.div`
   position: absolute;
@@ -19,7 +21,7 @@ const StyledSearchbarContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-`
+`;
 const StyledSearchbar = styled.input`
   width: 100%;
   font-size: 30pt;
@@ -40,7 +42,7 @@ const StyledSearchbar = styled.input`
     opacity: 1;
     outline: none;
   }
-`
+`;
 
 const SearchIcon = styled.div<{ src: string }>`
   height: 2.9rem;
@@ -51,29 +53,29 @@ const SearchIcon = styled.div<{ src: string }>`
 
   mask-size: cover;
   mask-image: url(${({ src }) => src});
-`
+`;
 
 export const Searchbar = () => {
-  const searchSettings = Settings.Search.getWithFallback()
-  const engine: string = searchSettings.engine || "google.com/"
+  const searchSettings = Settings.Search.getWithFallback();
+  const engine: string = searchSettings.engine || "google.com/";
 
-  let searchSymbol = undefined
-  if (engine.includes("duckduckgo")) searchSymbol = duckduckgo
-  else if (engine.includes("google")) searchSymbol = google
-  else if (engine.includes("qwant")) searchSymbol = qwant
-  else if (engine.includes("ecosia")) searchSymbol = ecosia
-  else if (engine.includes("exa")) searchSymbol = qwant
+  let searchSymbol: any = undefined;
+  if (engine.includes("duckduckgo")) searchSymbol = duckduckgo;
+  else if (engine.includes("google")) searchSymbol = google;
+  else if (engine.includes("qwant")) searchSymbol = qwant;
+  else if (engine.includes("ecosia")) searchSymbol = ecosia;
+  else if (engine.includes("exa")) searchSymbol = qwant;
 
   const redirectToSearch = (query: string) => {
     if (searchSettings.fastForward[query])
-      window.location.href = searchSettings.fastForward[query]
+      window.location.href = searchSettings.fastForward[query];
     else {
       // for compatibility with old engine urls before fluidity 0.5.0
       if (!engine.includes(queryToken))
-        window.location.href = "https://" + engine + "?q=" + query
-      else window.location.href = engine.replace(queryToken, query)
+        window.location.href = "https://" + engine + "?q=" + query;
+      else window.location.href = engine.replace(queryToken, query);
     }
-  }
+  };
 
   return (
     <StyledSearchbarContainer>
@@ -81,10 +83,12 @@ export const Searchbar = () => {
       <StyledSearchbar
         placeholder="You only have one shot."
         type="input"
-        onKeyUp={e => e.which === 13 && redirectToSearch(e.currentTarget.value)}
+        onKeyUp={(e) =>
+          e.which === 13 && redirectToSearch(e.currentTarget.value)
+        }
         // eslint-disable-next-line jsx-a11y/no-autofocus
         autoFocus
       />
     </StyledSearchbarContainer>
-  )
-}
+  );
+};
